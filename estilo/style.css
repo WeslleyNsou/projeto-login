@@ -21,17 +21,17 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     width: 300px;
     height: 500px;
 
-    background-color: rgb(243, 220, 227);
+    background-color: rgba(255, 255, 255, 0.897);
 
     border-radius: 20px;
     overflow: hidden;/*tudo que estiver fora da borda nao ficara visivel*/
 
     box-shadow: rgba(0, 0, 0, 0.384) 0px 0px 10px;
 
+    transform: translate(-50%,-50%);
     transition: width 0.5, height 0.5;
     transition-timing-function: ease;
 }
@@ -47,4 +47,93 @@ section{
     display: block;
     
 }
+div.campo{
+    display: block;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
 
+    background-color: #dbbfa9;
+
+    text-align: center;
+
+    border-radius: 5px;
+    border: solid #dbbfa9 ; 
+}
+
+div.campo label{
+    display: none;
+}
+div.campo span{
+    width: 40px;
+    font-size: 2.5em;
+}
+div.campo input{
+    width:calc(100% - 51px) ;
+    height: 100%;
+
+    font-size: 1em;
+
+    border: none;
+    border-radius: 5px;
+
+    transform: translateY(-16px);
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+p{
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#enviar{ 
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+
+    font-size: 1em;
+
+    background-color: #7fe3fc;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+#enviar:hover{
+    
+    background-color: rgb(82, 136, 150);
+}
+
+form > a.botao{
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 7px;
+
+    background-color: #bce4ee;
+    color: rgb(30, 51, 56);
+
+    text-decoration: none;
+    text-align: center;
+
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+form > a.botao:hover{
+    background-color: #426169;
+
+}
+
+form > a.botao > span{
+    font-size: 0.9em;
+}
